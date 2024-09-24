@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .res {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main1 {
+            padding: 0px 15px;
+            justify-items: center;
+            background: lightgray;
+            height: 100vh;
+        }
+
+        .fbname {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+
+        }
+
+        .fbname .left {
+            margin-bottom: 90px;
+            margin-right: 20px;
+
+        }
+
+        .fbname h1 {
+            color: rgba(6, 27, 119, 0.808);
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .fbname p {
+            color: rgb(26, 24, 24);
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            max-width: 800px;
+            margin-left: 50px;
+            
+        }
+
+        form input {
+            height: 55px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            padding: 20px;
+            max-width: 800px;
+
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            padding: 0 14px;
+
+        }
+        .submit{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .submit button{
+            height: 50px;
+            width: 100%;
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(13, 163, 223);
+            font-size: 20px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .submit a{
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 16px;
+            color: rgb(106, 106, 240);
+            margin-bottom: 20px;
+        }
+        .create {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .create a{
+            text-decoration: none;
+            color: white;
+            padding: 15px 50px;
+            background-color: rgba(24, 202, 24, 0.959);
+            font-weight: bolder;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main1 res">
+        <div class="fbname res">
+            <div class="left">
+                <h1>Facebook</h1>
+                <p>Facebook helps you connect and share</p>
+                <p>with the people in your life.</p>
+            </div>
+            <div class="right">
+                <form action="#">
+                    <input type="emailphone" placeholder="Email address or phone number" required>
+                    <input type="password" placeholder="password">
+                    <div class="submit">
+                        <button type="submit">Login</button>
+                        <a class="forgot" href="#">Forgotten Password?</a>
+                    </div>
+                    <hr>
+                    <div class="create">
+                        <a href="">Create New Account</a>
+                    </div>
+                </form>
+                <p><b>Create a page</b> for celebrity, brand and business.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
